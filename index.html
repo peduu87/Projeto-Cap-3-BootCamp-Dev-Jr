@@ -8,60 +8,11 @@
 </head>
 <body>
     
-    <input type="text" id="phone">
-
-   <div class="counters">
-
-     <div class="counter">
-
-         <!-- displayLimit(min, max) -->
-        
-         <button class="counter-button, minus-button" id="minus-button">-</button>
-
-
-
-          <input class="counter-display" id="counter-display" type="text" value="0" readonly></input>
-
-
-
-          <button class="counter-button, plus-button" id="plus-button">+</button>
-
-      </div>
-
-      <div class="counter">
-
-          <!-- displayLimit(min, max) -->
-        
-         <button class="counter-button, minus-button" id="minus-button">-</button>
-
-
-
-         <input class="counter-display" id="counter-display" type="text" value="0" readonly></input>
-
-
-
-         <button class="counter-button, plus-button" id="plus-button">+</button>
-
-     </div>
-
-     <div class="counter">
-
-          <!-- displayLimit(min, max) -->
-        
-           <button class="counter-button, minus-button" id="minus-button">-</button>
-
-
-
-            <input class="counter-display" id="counter-display" type="text" value="0" readonly></input>
-
-
-
-         <button class="counter-button, plus-button" id="plus-button">+</button>
-
-     </div>
-
-   </div>
-    
+    <div class="quantity buttons_added">
+	    <input type="button" value="-" class="minus">
+        <input type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
+        <input type="button" value="+" class="plus">
+    </div>
 
     <script src="jquery/jquery-3,6,0.min.js"></script>
     <script src="jquery/jquery.mask.min.js"></script>

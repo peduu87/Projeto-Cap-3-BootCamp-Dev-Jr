@@ -1,26 +1,42 @@
-.counter {
+body {
+    background-color: #fcfcfc;
+}
+
+.quantity {
     display: flex;
     margin-top: 15px;
-    background-color: #e9e9e9;
-    width: 120px;
+    background-color: transparent;
+    width: 100px;
     justify-content: space-between;
     box-sizing: border-box;
+    height: 45px;
+    border-top: solid 1px #c5c5c5;
+    border-bottom: solid 1px #c5c5c5;
 }
 
-.counter-button {
-    width: 30px;
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-
-.counter-display {
+.qty {
     font-size: 1.2rem;
     border: none;
     width: 100%;
     text-align: center;
+    background-color: transparent;
 }
 
-.counter-display:focus {
+.qty::-webkit-inner-spin-button, 
+.qty::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.minus, .plus {
+    height: 100%;
+    width: 50px;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    padding: 0px;
     border: none;
-    outline: none;
+    background-color: transparent;
+    border-left: solid 1px #c5c5c5;
+    border-right: solid 1px #c5c5c5;
+    cursor: pointer;
 }
