@@ -1,17 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en-us">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BootCamp Restaurant Menu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
+    Small Fries
+    <br>
+    $3
     <div class="quantity buttons_added">
 	    <input type="button" value="-" class="minus">
-        <input type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
+        <input type="number" step="1" min="0" max="5" id="1" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
         <input type="button" value="+" class="plus">
+    </div>
+
+    Cheeseburger
+    <br>
+    $8
+    <div class="quantity buttons_added">
+	    <input type="button" value="-" class="minus">
+        <input type="number" step="1" min="0" max="5" id="2" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
+        <input type="button" value="+" class="plus">
+    </div>
+
+    <button onclick="calc()">Mostrar</button>
+
+    <div class="output" id="output">
+        
     </div>
 
     <script src="jquery/jquery-3,6,0.min.js"></script>

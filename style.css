@@ -4,7 +4,8 @@ body {
 
 .quantity {
     display: flex;
-    margin-top: 15px;
+    margin-top: 5px;
+    margin-bottom: 15px;
     background-color: transparent;
     width: 100px;
     justify-content: space-between;

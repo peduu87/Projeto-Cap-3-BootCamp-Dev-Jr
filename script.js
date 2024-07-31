@@ -35,8 +35,42 @@ String.prototype.getDecimals || (String.prototype.getDecimals = function () {
 
 
 
-//#region Calc
+//#region Money
 
+var prods = [
+    {id: 11, name: "X-Burguer", price: 24.9},
+    {id: 12, name: "X-Bacon", price: 27.9},
+    {id: 13, name: "X-Frango", price: 23.9},
+    {id: 21, name: "Batatas Fritas", price: 9.9},
+    {id: 22, name: "Bagel", price: 7.9},
+    {id: 23, name: "Bolinhos Veganos", price: 17.9},
+    {id: 31, name: "Sorvete com Chocolate", price: 14.9},
+    {id: 32, name: "Torta de Frutas Silvestres", price: 11.9},
+    {id: 33, name: "Trufas de Chocolate", price: 11.9},
+];
 
+var formatter = new Intl.NumberFormat('pt-BR', {
+    style: 'currency', currency: 'BRL'
+});
+
+function calc() {
+    let quatities = document.getElementsByName("quantity");
+    let output = document.getElementById("output");
+    let total = 0;
+
+    output.innerHTML = "<br>";
+
+    for (let input of quatities) {
+        let id = input.id;
+        if (input.value > 0) {
+            output.innerHTML += `ID do produto = ${prods[id-1].id} - Produto = ${prods[id-1].name} - Preço Un. = ${formatter.format(prods[id-1].price)} - Quantidade = ${input.value} - Valor = ${formatter.format(prods[id-1].price*parseFloat(input.value))} </br>`;
+            total += prods[id-1].price*parseFloat(input.value);
+        } 
+    }
+
+    if (total != 0) {
+        output.insertAdjacentHTML("beforeend", `<h3>Total = ${formatter.format(total)}</h3>`);
+    }
+}
 
 //#endregion
