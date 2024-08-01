@@ -38,10 +38,10 @@ String.prototype.getDecimals || (String.prototype.getDecimals = function () {
 //#region Money
 
 var prods = [
-    {id: 11, name: "X-Burguer", price: 24.9},
-    {id: 12, name: "X-Bacon", price: 27.9},
-    {id: 13, name: "X-Frango", price: 23.9},
-    {id: 21, name: "Batatas Fritas", price: 9.9},
+    {id: 11, name: "The Burger", price: 24.9},
+    {id: 12, name: "The Bacon", price: 27.9},
+    {id: 13, name: "The Chicken", price: 23.9},
+    {id: 21, name: "Batatas Fritas", price: 11.9},
     {id: 22, name: "Bagel", price: 7.9},
     {id: 23, name: "Bolinhos Veganos", price: 17.9},
     {id: 31, name: "Sorvete com Chocolate", price: 14.9},

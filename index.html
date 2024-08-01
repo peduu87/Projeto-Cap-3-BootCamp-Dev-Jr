@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +7,176 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    Small Fries
-    <br>
-    $3
-    <div class="quantity buttons_added">
-	    <input type="button" value="-" class="minus">
-        <input type="number" step="1" min="0" max="5" id="1" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
-        <input type="button" value="+" class="plus">
+
+    <div class="product-display">
+
+        <!-- PRINCIPAL -->
+
+        <div class="product-row">
+            <div class="product-card">
+                <div class="plate-photo">
+                    <img src="images\plates\11-the_burger.jpg" alt="A photo of the product" class="plate-image">
+                </div>
+                <h3>X-Burguer</h3>
+                <div style="height: 60px;">
+                    <p>Pão, carne bovina, queijo, alface, tomate, picles, ketchup e maionese.</p>
+                </div>
+                <h3>R$ 24,90</h3>
+                <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus">
+                    <input type="number" step="1" min="0" max="5" id="1" name="quantity" value="0" title="Qty"
+                        class="input-text qty text" size="4" pattern="" inputmode="">
+                    <input type="button" value="+" class="plus">
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="plate-photo">
+                    <img src="images\plates\12-the_bacon.jpg" alt="A photo of the product" class="plate-image">
+                </div>
+                <h3>X-Bacon</h3>
+                <div style="height: 60px;">
+                    <p>Pão, carne bovina, bacon, queijo, alface, tomate, cebola roxa, picles, ketchup e maionese.</p>
+                </div>
+                <h3>R$ 27,90</h3>
+                <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus">
+                    <input type="number" step="1" min="0" max="5" id="2" name="quantity" value="0" title="Qty"
+                        class="input-text qty text" size="4" pattern="" inputmode="">
+                    <input type="button" value="+" class="plus">
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="plate-photo">
+                    <img src="images\plates\13-the_chicken.jpg" alt="A photo of the product" class="plate-image">
+                </div>
+                <h3>X-Bacon</h3>
+                <div style="height: 60px;">
+                    <p>Pão, carne de frango, bacon, alface, tomate, cebola roxa e maionese.</p>
+                </div>
+                <h3>R$ 23,90</h3>
+                <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus">
+                    <input type="number" step="1" min="0" max="5" id="3" name="quantity" value="0" title="Qty"
+                        class="input-text qty text" size="4" pattern="" inputmode="">
+                    <input type="button" value="+" class="plus">
+                </div>
+            </div>
+        </div>
+
+        <!-- ACOMPANHAMENTOS -->
+
+        <div class="product-row">
+            <div class="product-card">
+                <div class="plate-photo">
+                    <img src="images\plates\21-batatas_fritas.jpg" alt="A photo of the product" class="plate-image">
+                </div>
+                <h3>Batatas Fritas</h3>
+                <div style="height: 60px;">
+                    <p>Batatas fritas temperadas com sal e especiarias (aprox. 200g).</p>
+                </div>
+                <h3>R$ 11,90</h3>
+                <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus">
+                    <input type="number" step="1" min="0" max="5" id="4" name="quantity" value="0" title="Qty"
+                        class="input-text qty text" size="4" pattern="" inputmode="">
+                    <input type="button" value="+" class="plus">
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="plate-photo">
+                    <img src="images\plates\22-bagel.jpg" alt="A photo of the product" class="plate-image">
+                </div>
+                <h3>Bagel</h3>
+                <div style="height: 60px;">
+                    <p>Massa de pão no estilo bagel coberta com sementes de gergelim.</p>
+                </div>
+                <h3>R$ 7,90</h3>
+                <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus">
+                    <input type="number" step="1" min="0" max="5" id="5" name="quantity" value="0" title="Qty"
+                        class="input-text qty text" size="4" pattern="" inputmode="">
+                    <input type="button" value="+" class="plus">
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="plate-photo">
+                    <img src="images\plates\23-bolinhos_veganos.jpg" alt="A photo of the product" class="plate-image">
+                </div>
+                <h3>Bolinhos Veganos</h3>
+                <div style="height: 60px;">
+                    <p>Massas de grão-de-bico temperadas cobertas com sementes de gergelim (aprox. 250g).</p>
+                </div>
+                <h3>R$ 17,90</h3>
+                <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus">
+                    <input type="number" step="1" min="0" max="5" id="6" name="quantity" value="0" title="Qty"
+                        class="input-text qty text" size="4" pattern="" inputmode="">
+                    <input type="button" value="+" class="plus">
+                </div>
+            </div>
+        </div>
+
+        <!-- SOBREMESAS -->
+
+        <div class="product-row">
+            <div class="product-card">
+                <div class="plate-photo">
+                    <img src="images\plates\31-sorvete_com_chocolate.jpg" alt="A photo of the product" class="plate-image">
+                </div>
+                <h3>Sorvete com Chocolate</h3>
+                <div style="height: 60px;">
+                    <p>Sorvete de baunilha com pedaços e cauda de chocolate meio amargo, adornado com biscoitos.</p>
+                </div>
+                <h3>R$ 14,90</h3>
+                <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus">
+                    <input type="number" step="1" min="0" max="5" id="7" name="quantity" value="0" title="Qty"
+                        class="input-text qty text" size="4" pattern="" inputmode="">
+                    <input type="button" value="+" class="plus">
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="plate-photo">
+                    <img src="images\plates\32-torta_de_frutas_silvestres.jpg" alt="A photo of the product" class="plate-image">
+                </div>
+                <h3>Torta de Frutas Silvestres</h3>
+                <div style="height: 60px;">
+                    <p>Torta de massa podre recheada com creme e frutas silvestres (cereja, framboesa, mirtilo e morango).</p>
+                </div>
+                <h3>R$ 11,90</h3>
+                <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus">
+                    <input type="number" step="1" min="0" max="5" id="8" name="quantity" value="0" title="Qty"
+                        class="input-text qty text" size="4" pattern="" inputmode="">
+                    <input type="button" value="+" class="plus">
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="plate-photo">
+                    <img src="images\plates\33-trufas_de_chocolate.jpg" alt="A photo of the product" class="plate-image">
+                </div>
+                <h3>Trufas de chocolate</h3>
+                <div style="height: 60px;">
+                    <p>Três trufas de chocolate meio amargo recheadas com chocolate e cobertas com avelã.</p>
+                </div>
+                <h3>R$ 11,90</h3>
+                <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus">
+                    <input type="number" step="1" min="0" max="5" id="9" name="quantity" value="0" title="Qty"
+                        class="input-text qty text" size="4" pattern="" inputmode="">
+                    <input type="button" value="+" class="plus">
+                </div>
+            </div>
+        </div>
     </div>
 
-    Cheeseburger
-    <br>
-    $8
-    <div class="quantity buttons_added">
-	    <input type="button" value="-" class="minus">
-        <input type="number" step="1" min="0" max="5" id="2" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
-        <input type="button" value="+" class="plus">
-    </div>
+    
 
     <button onclick="calc()">Mostrar</button>
 
