@@ -195,10 +195,18 @@
 
     
 
-    <button onclick="calc()">Mostrar</button>
-
-    <div class="output" id="output">
-        
+    <div class="order" id="orderDiv">
+        <div class="personal-data">
+            <input type="text" placeholder="Nome:" id="name">
+            <input type="email" placeholder="Email:" id="email">
+            <input type="text" placeholder="Telefone celular:" id="cellphone" class="phone">
+        </div>
+        <div>
+            <button class="calc-button" onclick="calc()">Calcular</button>
+        </div>
+        <div class="output" id="output">
+    
+        </div>
     </div>
 
     <script src="jquery/jquery-3,6,0.min.js"></script>

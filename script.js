@@ -1,6 +1,8 @@
 //#region JQuery Mask
 
-$("#phone").mask("(99) 9999-99999");
+$(document).ready(function() {
+    $('.phone').mask('(99) 9999-99999');
+})
 
 //#endregion
 
@@ -53,24 +55,40 @@ var formatter = new Intl.NumberFormat('pt-BR', {
     style: 'currency', currency: 'BRL'
 });
 
+var output = document.getElementById("output");
+var orderDiv = document.getElementById("orderDiv");
+
 function calc() {
     let quatities = document.getElementsByName("quantity");
-    let output = document.getElementById("output");
     let total = 0;
 
-    output.innerHTML = "<br>";
+    output.innerHTML = "";
+
+    if (document.getElementById("orderButton") != null) {
+        orderDiv.removeChild(document.getElementById("orderButton"));
+    }
+
+    let userName = document.getElementById("name").value;
+    let userEmail = document.getElementById("email").value;
+    let userCellphone = document.getElementById("cellphone").value;
 
     for (let input of quatities) {
         let id = input.id;
         if (input.value > 0) {
-            output.innerHTML += `ID do produto = ${prods[id-1].id} - Produto = ${prods[id-1].name} - Preço Un. = ${formatter.format(prods[id-1].price)} - Quantidade = ${input.value} - Valor = ${formatter.format(prods[id-1].price*parseFloat(input.value))} </br>`;
+            output.innerHTML += `<p>ID: ${prods[id-1].id} - Produto: ${prods[id-1].name}<br>Preço Un. = ${formatter.format(prods[id-1].price)} - Quantidade = ${input.value}<br>Valor = ${formatter.format(prods[id-1].price*parseFloat(input.value))}</p>`;
             total += prods[id-1].price*parseFloat(input.value);
         } 
     }
 
-    if (total != 0) {
-        output.insertAdjacentHTML("beforeend", `<h3>Total = ${formatter.format(total)}</h3>`);
+    if (total > 0) {
+        output.insertAdjacentHTML("afterbegin", `<p>Nome: ${userName}<br>Email: ${userEmail}<br>Telefone celular: ${userCellphone}</>`);
+        output.insertAdjacentHTML("beforeend", `<h3>Total = <span>${formatter.format(total)}</span></h3>`);
+        orderDiv.insertAdjacentHTML("beforeend", `<button class="order-button" id="orderButton" onclick="justTesting()">Pedir</button>`);
     }
+}
+
+function justTesting() {
+    window.alert("Desculpe-me! Isto é apenas um teste! 😅\nTalvez um dia eu abra esse restaurante...");
 }
 
 //#endregion
