@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BootCamp Restaurant Menu</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="header">
-        <img src="images\other_images\lunch_dining_40dp_FFFFFF_FILL0_wght500_GRAD0_opsz40.svg" style="position: relative; top: 25px; margin-top: -25px;">
+        <img src="images\other_images\lunch_dining_40dp_FFFFFF_FILL0_wght500_GRAD0_opsz40.svg"
+            style="position: relative; top: 25px; margin-top: -25px;">
         <h1>Pedro's</h1>
         <h3>Burger Shop</h3>
     </div>
 
     <div class="product-display">
-        <div style="align-items: center; align-content: center; justify-content: center; justify-items: center; text-align: center;">
-            <img src="images\other_images\menu_book_40dp_212124_FILL0_wght500_GRAD0_opsz40.svg" style="margin-bottom: -10px;">
+        <div
+            style="align-items: center; align-content: center; justify-content: center; justify-items: center; text-align: center;">
+            <img src="images\other_images\menu_book_40dp_212124_FILL0_wght500_GRAD0_opsz40.svg"
+                style="margin-bottom: -10px;">
             <h2>MENU</h2>
         </div>
 
         <!-- #region PRINCIPAIS -->
-
+        <div class="row-title">
+            <h2>Principais</h2>
+        </div>
         <div class="product-row">
             <div class="product-card">
                 <div class="plate-photo">
@@ -78,7 +85,9 @@
         <!-- #endregion -->
 
         <!-- #region ACOMPANHAMENTOS -->
-
+        <div class="row-title">
+            <h2>Acompanhamentos</h2>
+        </div>
         <div class="product-row">
             <div class="product-card">
                 <div class="plate-photo">
@@ -135,11 +144,14 @@
         <!-- #endregion -->
 
         <!-- #region SOBREMESAS -->
-
+        <div class="row-title">
+            <h2>Sobremesas</h2>
+        </div>
         <div class="product-row">
             <div class="product-card">
                 <div class="plate-photo">
-                    <img src="images\plates\31-sorvete_com_chocolate.jpg" alt="A photo of the product" class="plate-image">
+                    <img src="images\plates\31-sorvete_com_chocolate.jpg" alt="A photo of the product"
+                        class="plate-image">
                 </div>
                 <h3>Sorvete com Chocolate</h3>
                 <div style="height: 60px;">
@@ -156,11 +168,13 @@
 
             <div class="product-card">
                 <div class="plate-photo">
-                    <img src="images\plates\32-torta_de_frutas_silvestres.jpg" alt="A photo of the product" class="plate-image">
+                    <img src="images\plates\32-torta_de_frutas_silvestres.jpg" alt="A photo of the product"
+                        class="plate-image">
                 </div>
                 <h3>Torta de Frutas Silvestres</h3>
                 <div style="height: 60px;">
-                    <p>Torta de massa podre recheada com creme e frutas silvestres (cereja, framboesa, mirtilo e morango).</p>
+                    <p>Torta de massa podre recheada com creme e frutas silvestres (cereja, framboesa, mirtilo e
+                        morango).</p>
                 </div>
                 <h3>R$ 11,90</h3>
                 <div class="quantity buttons_added">
@@ -173,7 +187,8 @@
 
             <div class="product-card">
                 <div class="plate-photo">
-                    <img src="images\plates\33-trufas_de_chocolate.jpg" alt="A photo of the product" class="plate-image">
+                    <img src="images\plates\33-trufas_de_chocolate.jpg" alt="A photo of the product"
+                        class="plate-image">
                 </div>
                 <h3>Trufas de chocolate</h3>
                 <div style="height: 60px;">
@@ -193,7 +208,7 @@
 
     </div>
 
-    
+
 
     <div class="order" id="orderDiv">
         <div class="personal-data">
@@ -204,16 +219,19 @@
         <div>
             <button class="calc-button" onclick="calc()">Calcular</button>
         </div>
-        <div class="output" id="output">
-    
-        </div>
+        <div class="output" id="output"></div>
     </div>
 
-    <p style="margin: 0.5rem; margin-bottom: 50px;">Project/prototype designed and developed by Pedro H. Silva. Access the repository by clicking the link: <a href="https://github.com/peduu87/Projeto-Mod-2-Cap-1-BootCamp-Dev-Jr" style="color: #e9e9e9;">https://github.com/peduu87/Projeto-Mod-2-Cap-1-BootCamp-Dev-Jr</a>.</p>
-    <a href="https://github.com/peduu87"><img src="images\other_images\github-icon-2.svg" alt="GitHub logo" style="margin: 5px; margin-bottom: 80px;"><img src="images\other_images\github-2.svg" style="margin: 5px; margin-bottom: 80px;"></a>
+    <p style="margin: 0.5rem; margin-bottom: 50px;">Project/prototype designed and developed by Pedro H. Silva. Access
+        the repository by clicking the link: <a href="https://github.com/peduu87/Projeto-Mod-2-Cap-1-BootCamp-Dev-Jr"
+            style="color: #e9e9e9;">https://github.com/peduu87/Projeto-Mod-2-Cap-1-BootCamp-Dev-Jr</a>.</p>
+    <a href="https://github.com/peduu87"><img src="images\other_images\github-icon-2.svg" alt="GitHub logo"
+            style="margin: 5px; margin-bottom: 45px;"><img src="images\other_images\github-2.svg"
+            style="margin: 5px; margin-bottom: 45px;"></a>
 
     <script src="jquery/jquery-3,6,0.min.js"></script>
     <script src="jquery/jquery.mask.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
